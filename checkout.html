@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagamento com Cartão de Crédito</title>
+</head>
+<body>
+    <h1>Formulário de Pagamento</h1>
+    <form action="processar_pagamento.php" method="post">
+        <label for="senderName">Nome:</label>
+        <input type="text" name="senderName" required><br>
+
+        <label for="senderEmail">E-mail:</label>
+        <input type="email" name="senderEmail" required><br>
+
+        <label for="senderAreaCode">Código de Área:</label>
+        <input type="text" name="senderAreaCode" required><br>
+
+        <label for="senderPhone">Telefone:</label>
+        <input type="text" name="senderPhone" required><br>
+
+        <label for="senderCPF">CPF:</label>
+        <input type="text" name="senderCPF" required><br>
+
+        <label for="creditCardToken">Token do Cartão:</label>
+        <input type="text" name="creditCardToken" required><br>
+
+        <label for="billingAddressStreet">Endereço de Cobrança:</label>
+        <input type="text" name="billingAddressStreet" required><br>
+
+        <label for="billingAddressNumber">Número:</label>
+        <input type="text" name="billingAddressNumber" required><br>
+
+        <label for="billingAddressComplement">Complemento:</label>
+        <input type="text" name="billingAddressComplement"><br>
+
+        <label for="billingAddressDistrict">Bairro:</label>
+        <input type="text" name="billingAddressDistrict" required><br>
+
+        <label for="billingAddressCity">Cidade:</label>
+        <input type="text" name="billingAddressCity" required><br>
+
+        <label for="billingAddressState">Estado:</label>
+        <input type="text" name="billingAddressState" required><br>
+
+        <label for="billingAddressPostalCode">CEP:</label>
+        <input type="text" name="billingAddressPostalCode" required><br>
+
+        <input type="submit" value="Efetuar Pagamento">
+    </form>
+</body>
+</html>
